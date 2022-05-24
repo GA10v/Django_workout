@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Workout(models.Model):
     name = models.CharField('name', max_length=100)
     focus = models.CharField('focus', max_length=50)

@@ -130,4 +130,8 @@ dmypy.json
 .pyre/
 config.py
 fit/fit/cache/data.json
-fit/fit/1.py
+1.py
+fit/data.json
+2.py
+fit/all_data.json
+fit/fit/templates/workout/1.html

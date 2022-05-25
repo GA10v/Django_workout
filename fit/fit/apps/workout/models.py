@@ -16,15 +16,15 @@ class Data:
             data[key]['thumbnail'] = str.split(('https://darebee.com/' + data[key]['thumbnail']), '#')[0]
 
         workouts = []
-
         for item in data:
             try:
+                data[item]['attr']["ct10"]["value"].append('all')
                 workout = {
                     'name' : data[item]['name'],
                     'focus' : ', '.join(data[item]['attr']["ct10"]["value"]),
-                    'types' : ', '.join(data[item]['attr']['ct16']['value']),
-                    'difficult' : ', '.join(data[item]['attr']['ct14']['value']),
-                    'equirment' : ', '.join(data[item]['attr']['ct19']['value']),
+                    'types' : ', '.join(data[item]['attr']['ct16']['value'])+', all',
+                    'difficult' : ', '.join(data[item]['attr']['ct14']['value'])+', all',
+                    'equirment' : ', '.join(data[item]['attr']['ct19']['value'])+', all',
                     'icon' : data[item]['thumbnail'],
                     'img' : data[item]['thumbnail'].replace('-intro.jpg', '.jpg'),
                     'muscles' : data[item]['thumbnail'].replace('/workouts', '/workouts/muscles').replace('-intro.jpg', '.jpg'),
@@ -52,6 +52,18 @@ class Workout(models.Model):
         for item in data:
             if item['name'] not in names:
                 cls.objects.create(**item)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

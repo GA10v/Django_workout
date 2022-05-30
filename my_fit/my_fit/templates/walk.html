@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Quick|start Walks</title>
+</head>
+<body>
+<!-- START Navbar-->
+
+    <div class="container ">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <span class="fs-3 bg-dark text-white"> QUICK </span><span class="fs-3 ">start</span>
+            </a>    
+            <ul class="nav nav-pills ">
+                <li class="nav-item"><a href="{% url 'index' %}" class="nav-link text-dark">Today</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark">Warm-ups</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark">Workouts</a></li>
+                <li class="nav-item"><a href="{% url 'walks' %}" class="nav-link active bg-dark text-white" aria-current="page">Walks</a></li>
+            </ul>
+        </header>
+    </div>
+    <!-- END Navbar-->
+<!--START  MAP-->
+    <div class="container ">
+        <div class="row row-cols-1 row-cols-md-1 mb-3 ">
+            <div class="row ">                                    
+<!--START  INPUT-->    
+                <div class="col-4">
+                    <div class="card mb-4 rounded-3 dark-sm">
+                        <div class="card-header bg-dark py-3">
+                            <h4 class="my-0 fw-normal text-center text-white">Settings</h4>
+                        </div> 
+                        <div class="card-body" с>
+                            
+                            <label for="exampleFormControlInput1" class="form-label">Address :</label>
+                            <input class="form-control" type="text" placeholder="Россия" aria-label="default input example" ><p></p>                                             
+                            <input class="form-control" type="text" placeholder="Москва" aria-label="default input example" ><p></p>                                           
+                            <input class="form-control" type="text" placeholder="Студенческая 33 " aria-label="default input example"><p></p>
+                            <div class="accordion accordion-flush " id="accordionFlushExample">
+                                <div class="btn-group-vertical w-100 " role="group" aria-label="Vertical button group">
+                                    <button type="button" class="btn btn-light" method="POST">Easy </button>
+                                    <button type="button" class="btn btn-light">Normal </button>
+                                    <button type="button" class="btn btn-light">Hard </button>                                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!--START  WEATHER-->
+                    <div class="card mb-4 rounded-3 dark-sm">
+                        <div class="card-header bg-dark py-3">
+                            <h4 class="my-0 fw-normal text-center text-white">Weather</h4>
+                        </div> 
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="exampleFormControlInput1" class="form-label">Temperature :</label>
+                                    {{w.feels}}<sup>o</sup> <br>                            
+                                    <label for="exampleFormControlInput1" class="form-labelq">Wind :</label>
+                                    {{w.wind}} m/s
+                                </div>
+                                <div class="col">
+                                    <div class="text"><img src="https://openweathermap.org/img/w/{{w.icon}}.png" alt="" > 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+    <!--END  WEATHER-->
+                </div>                        
+<!--START  map-->    
+                <div class="col-8">
+                    <div class="card mb-2 rounded-3 dark-sm">
+                        <div class="card-header bg-dark py-3">
+                            <h4 class="my-0 fw-normal text-center text-white">Route</h4>
+                        </div>
+                        <div class="card-body">
+                            {{ m | safe}}
+                    </div>
+                </div>
+            </div>
+    <!--END  map-->
+        </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

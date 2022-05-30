@@ -135,3 +135,71 @@ fit/data.json
 2.py
 fit/all_data.json
 fit/fit/templates/workout/1.html
+my_fit/cache/base_1500.json
+my_fit/cache/base_2500.json
+my_fit/cache/base_3000.json
+my_fit/cache/base_test.json
+my_fit/cache/difficult_data.json
+my_fit/cache/equirment_data.json
+my_fit/cache/focus_data.json
+my_fit/cache/name_data.json
+my_fit/cache/NAME.json
+my_fit/cache/parse_data.json
+my_fit/cache/types_data.json
+my_fit/cache/workouys_data.json
+my_fit/cache/food/all.json
+my_fit/cache/food/Campina.json
+my_fit/cache/food/Coca-Cola.json
+my_fit/cache/food/KFC Ростик'c.json
+my_fit/cache/food/Lay's.json
+my_fit/cache/food/Mars.json
+my_fit/cache/food/Nestle.json
+my_fit/cache/food/Subway.json
+my_fit/cache/food/Ашан.json
+my_fit/cache/food/Баранина и дичь.json
+my_fit/cache/food/Бобовые.json
+my_fit/cache/food/Бондюэль.json
+my_fit/cache/food/Варенье и джемы.json
+my_fit/cache/food/Вода и напитки.json
+my_fit/cache/food/Вторые блюда.json
+my_fit/cache/food/Выпечка.json
+my_fit/cache/food/Гарниры.json
+my_fit/cache/food/Говядина и телятина.json
+my_fit/cache/food/Грибы.json
+my_fit/cache/food/Десерты.json
+my_fit/cache/food/Детское питание.json
+my_fit/cache/food/Жиры и масла.json
+my_fit/cache/food/Заготовки.json
+my_fit/cache/food/Закуски.json
+my_fit/cache/food/Каши.json
+my_fit/cache/food/Кондитерские изделия.json
+my_fit/cache/food/Крошка-Картошка.json
+my_fit/cache/food/Крупы, мука, макароны.json
+my_fit/cache/food/Макдоналдс (McDonalds).json
+my_fit/cache/food/Молочные продукты.json
+my_fit/cache/food/Напитки алкогольные.json
+my_fit/cache/food/Напитки.json
+my_fit/cache/food/Овощи и зелень.json
+my_fit/cache/food/Орехи и семена.json
+my_fit/cache/food/Первые блюда.json
+my_fit/cache/food/Полуфабрикаты.json
+my_fit/cache/food/Птица.json
+my_fit/cache/food/Пятерочка.json
+my_fit/cache/food/Ресторанная еда.json
+my_fit/cache/food/Роллтон.json
+my_fit/cache/food/Рыба и морепродукты.json
+my_fit/cache/food/Салаты.json
+my_fit/cache/food/Свинина.json
+my_fit/cache/food/Снеки.json
+my_fit/cache/food/Соки.json
+my_fit/cache/food/Сосиски и колбаса.json
+my_fit/cache/food/Соусы и заправки.json
+my_fit/cache/food/Травы, специи и соусы.json
+my_fit/cache/food/Фаст-фуд.json
+my_fit/cache/food/Фрукты и ягоды.json
+my_fit/cache/food/Хлеб и выпечка.json
+my_fit/cache/food/Черкизово.json
+my_fit/cache/food/Яйца и продукты из яиц.json
+my_fit/cache/food/Яшкино.json
+my_fit/1.json
+my_fit/map_test.py

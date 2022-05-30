@@ -1,0 +1,84 @@
+
+
+
+
+<div class="col">
+    <div class="card mb-4 rounded-3 dark-sm">
+      <div class="card-header bg-dark py-3">
+        <h4 class="my-0 fw-normal text-white">Daily walk</h4>
+      </div>
+      <p></p>
+         
+      
+      <div class="card-body">
+        <button type="button" class="w-10 btn btn-lg" data-bs-toggle="modal" data-bs-target="#mapModal">
+          {{m_d | safe}}                                     
+        </button> 
+        <!-- <div class="card mb-4 rounded-3 dark-sm"> -->
+          <div class="card-header bg-secondary py-3">
+              <h4 class="my-0 fw-normal text-center text-white">Weather</h4>
+          </div> 
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-8">
+                    <p></p>
+                      <label for="exampleFormControlInput1" class="form-label">Temperature :</label>
+                      {{weather.feels}}<sup>o</sup> <br>                            
+                      <label for="exampleFormControlInput1" class="form-labelq">Wind :</label>
+                      {{weather.wind}} m/s
+                  </div>
+                  <div class="col-4">
+                    <p></p>
+                      <div class="text"><h2><img src="https://openweathermap.org/img/w/{{weather.icon}}.png" alt="" ></h2> 
+                      </div>
+                  </div>
+              </div>  
+              <p></p>
+          </div>
+      
+
+          <!-- <div class="alert alert-secondary" role="alert">
+            <h4 class="my-0 fw-normal ">Weather </h4>
+          </div>
+          
+            <div class="text">  <img src="https://openweathermap.org/img/w/{{weather.icon}}.png" alt="" > 
+            </div> 
+            
+            <div class="text"> 
+              <h5>Temperature : {{weather.feels}}<sup>o</sup></h5> 
+            </div>
+            <div class="text"> 
+              <h5>Wind : {{weather.wind}} m/s </h5>
+            </div>      
+         -->
+                                            
+        <!-- Modal -->
+          <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                
+                  <div class="modal-header bg-dark">
+                    <h3 class="modal-title text-white w-100" id="staticBackdropLabel">Distance : {{dis}} m</h3>
+                  </div>
+                <div class="modal-body">                  
+                  {{m | safe}}
+                </div>
+                <div class="btn-group-vertical w-100 " role="group" aria-label="Vertical button group">
+                  <button type="button" class="btn btn-light">Easy </button>
+                  <button type="button" class="btn btn-light">Normal </button>
+                  <button type="button" class="btn btn-light">Hard </button>                    
+              </div>              
+            </div>
+          </div>         
+      </div>
+      </div>
+      
+      <!-- <div class="btn-group-vertical w-100 " role="group" aria-label="Vertical button group">
+        <button type="button" class="btn btn-light">Easy </button>
+        <button type="button" class="btn btn-light">Normal </button>
+        <button type="button" class="btn btn-light">Hard </button> -->
+      </div>
+    </div>
+    
+</div>
+

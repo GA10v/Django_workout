@@ -3,3 +3,4 @@ Requests==2.27.1
 Folium==0.12.1.post1
 Polyline==1.4.0
 fake-useragent==0.1.11
+geocoder==1.38.1

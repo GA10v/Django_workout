@@ -1,0 +1,36 @@
+{% extends 'partials/base.html' %}
+
+{% block title %} Quick|start Today {% endblock%}
+
+
+
+{% block content %}
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 mb-2 text-center">
+<!-- DAILY TASK-->
+
+        {% include 'workout/daily_work_demo.html' %}
+<!--END DAILY TASK-->
+        
+<!-- DAILY WALK-->
+        {% include 'walk/daily_walk_demo.html' %}
+<!--END DAILY TASK-->
+    </div>
+<!--Grafik-->
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-1 mb-1 text-center">
+        <div class="col">
+            <div class="card mb-4 rounded-3 dark-sm">
+                <div class="card-header bg-dark py-3">
+                  <h4 class="my-0 fw-normal text-white">Daily task</h4>
+                </div>                  
+                    <div class="card-body">
+                        НЕ ДЕМО!!!!
+                    </div>
+            </div>
+    </div>
+<!--END Grafik-->
+</div>
+
+{% endblock content %} 

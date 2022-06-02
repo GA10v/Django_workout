@@ -1,0 +1,35 @@
+{% extends 'partials/base.html' %}
+
+{% block title %} Quick|start Log in {% endblock%}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row mt-5 row-cols-1 row-cols-mt-5 ">
+        <div class="col-md-6 offset-md-3">
+            <div class="card mb-4 rounded-3 dark-sm">
+                <div class="card-header bg-dark py-3">
+                  <h4 class="my-0 fw-normal text-white text-center">Log in</h4>
+                </div>                  
+                <div class="card-body">
+                    <form method="POST">
+
+                        {% csrf_token %}
+
+                        {{form | crispy}}
+
+                        <hr>
+                        <input class="btn btn-succes bg-dark text-white" type="submit" value="Log in">         
+                    </form>                 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}                
+
+
+

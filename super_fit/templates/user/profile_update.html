@@ -1,0 +1,76 @@
+{% extends 'partials/base.html' %}
+
+{% block title %} Quick|start Log in {% endblock%}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row mt-5 row-cols-1 row-cols-mt-5 ">
+        <div class="col-md-6 offset-md-3">
+            <div class="card mb-4 rounded-3 dark-sm">
+                <div class="card-header bg-dark py-3">
+                  <h4 class="my-0 fw-normal text-white text-center">Edit profile</h4>
+                </div>                          
+                <div class="card-body"> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="container">
+                                <form method="post">                                    
+
+                                    {% csrf_token %}
+                                    {{ user_form| as_crispy_errors }}
+                                    {{ profile_form| as_crispy_errors }}
+
+                                    <div class="alert alert-dark" role="alert">
+                                        Personal information  
+                                    </div>
+                                    <table class="table bg-white table-borderless">
+                                        <tbody>
+                                            <th scope="row">Name</th> <td>{{ user_form.username }} </td> </tr> 
+                                            <th scope="row">Address for daily walk</th> <td>{{ profile_form.address }}</td> </tr> 
+                                            <th scope="row">Email</th> <td>{{ user_form.email }}</td> </tr> 
+                                            <th scope="row">Gender</th> <td>{{ profile_form.gender }} </td> </tr>   
+                                            <th scope="row">Age</th> <td>{{ profile_form.age }} </td>  </tr>   
+                                            <th scope="row">Growth</th> <td>{{ profile_form.growth }} cm </td>  </tr>                             
+                                            
+                                            
+                                            <th scope="row">Weight</th> <td>{{ profile_form.weight }} kg</td> </tr>    
+                                            <th scope="row">Lifestyle</th> <td>{{ profile_form.lifestyle }}</td> </tr>  
+                                        </tbody>
+                                    </table> 
+                                    <hr>
+                                    <div class="alert alert-dark" role="alert">
+                                        Personal goals
+                                    </div>
+                                        <table class="table bg-white table-borderless">
+                                            <tbody>              
+                                                <th scope="row">Task</th> <td>{{ profile_form.task }} </td> </tr>                                 
+                                                <th scope="row">Goal</th> <td>{{ profile_form.goal }} kg</td> </tr> 
+                                            </tbody>
+                                        </table>                  
+
+                                    <!-- {{ user_form| as_crispy_errors }}
+                                    {{ profile_form| as_crispy_errors }}
+
+
+                                    {{ user_form | crispy }}
+
+                                    {{ profile_form | crispy }} -->
+                                    
+                                    <hr>
+                                    <input class="btn btn-succes bg-dark text-white" type="submit" value="Save">
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>                            
+                    <a class="nav-link text-white" href="{% url 'user-logout' %}">Logout</a>                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}      

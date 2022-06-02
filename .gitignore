@@ -203,3 +203,61 @@ my_fit/cache/food/Яйца и продукты из яиц.json
 my_fit/cache/food/Яшкино.json
 my_fit/1.json
 my_fit/map_test.py
+super_fit/cache/Campina.json
+super_fit/cache/Coca-Cola.json
+super_fit/cache/KFC Ростик'c.json
+super_fit/cache/Lay's.json
+super_fit/cache/Mars.json
+super_fit/cache/Nestle.json
+super_fit/cache/Subway.json
+super_fit/cache/Ашан.json
+super_fit/cache/Баранина и дичь.json
+super_fit/cache/Бобовые.json
+super_fit/cache/Бондюэль.json
+super_fit/cache/Варенье и джемы.json
+super_fit/cache/Вода и напитки.json
+super_fit/cache/Вторые блюда.json
+super_fit/cache/Выпечка.json
+super_fit/cache/Гарниры.json
+super_fit/cache/Говядина и телятина.json
+super_fit/cache/Грибы.json
+super_fit/cache/Десерты.json
+super_fit/cache/Детское питание.json
+super_fit/cache/Жиры и масла.json
+super_fit/cache/Заготовки.json
+super_fit/cache/Закуски.json
+super_fit/cache/Каши.json
+super_fit/cache/Кондитерские изделия.json
+super_fit/cache/Крошка-Картошка.json
+super_fit/cache/Крупы, мука, макароны.json
+super_fit/cache/Макдоналдс (McDonalds).json
+super_fit/cache/Молочные продукты.json
+super_fit/cache/Напитки алкогольные.json
+super_fit/cache/Напитки.json
+super_fit/cache/Овощи и зелень.json
+super_fit/cache/Орехи и семена.json
+super_fit/cache/Первые блюда.json
+super_fit/cache/Полуфабрикаты.json
+super_fit/cache/Птица.json
+super_fit/cache/Пятерочка.json
+super_fit/cache/Ресторанная еда.json
+super_fit/cache/Роллтон.json
+super_fit/cache/Рыба и морепродукты.json
+super_fit/cache/Салаты.json
+super_fit/cache/Свинина.json
+super_fit/cache/Снеки.json
+super_fit/cache/Соки.json
+super_fit/cache/Сосиски и колбаса.json
+super_fit/cache/Соусы и заправки.json
+super_fit/cache/Травы, специи и соусы.json
+super_fit/cache/Фаст-фуд.json
+super_fit/cache/Фрукты и ягоды.json
+super_fit/cache/Хлеб и выпечка.json
+super_fit/cache/Черкизово.json
+super_fit/cache/Яйца и продукты из яиц.json
+super_fit/cache/Яшкино.json
+super_fit/food.json
+.gitignore
+super_fit/create-food.py
+super_fit/create-diet.py
+super_fit/create-my-map.py

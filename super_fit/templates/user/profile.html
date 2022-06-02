@@ -1,0 +1,68 @@
+{% extends 'partials/base.html' %}
+
+{% block title %} Quick|start Log in {% endblock%}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row mt-5 row-cols-1 row-cols-mt-5 ">
+        <div class="col-md-6 offset-md-3">
+            <div class="card mb-4 rounded-3 dark-sm">
+                <div class="card-header bg-dark py-3">
+                  <h4 class="my-0 fw-normal text-white text-center">Profile</h4>
+                </div>                          
+                <div class="card-body"> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col align-self-start">
+                                <button class="btn btn-succes bg-dark text-white" value=""><a href="{% url 'user-profile-update'  %}" class="nav-link active bg-dark text-white">Edit</a>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col align-self-end">
+                                <button class="btn btn-succes bg-dark text-white" value=""><a href="{% url 'user-logout' %}" class="nav-link active bg-dark text-white">Logout</a>
+                            </div>
+                        </div>
+                    </div>                                                   
+                        <hr>
+                        <div class="alert alert-dark" role="alert">
+                            Personal information  
+                        </div>
+                        <table class="table bg-white table-borderless">
+                            <tbody>
+                                <th scope="row">Name</th> <td>{{ user.username }} </td> </tr>
+                                <th scope="row">Email</th> <td>{{ user.email }}</td> </tr>  
+                                <th scope="row">Address for daily walk</th> <td>{{ user.profile.address }}</td> </tr> 
+                                <th scope="row">Gender</th> <td>{{ user.profile.gender }} </td> </tr>   
+                                <th scope="row">Age</th> <td>{{ user.profile.age }} </td>  </tr>   
+                                <th scope="row">Growth</th> <td>{{ user.profile.growth }} cm </td>  </tr>                             
+                               
+                              
+                                <th scope="row">Weight</th> <td>{{ user.profile.weight }} kg</td> </tr>    
+                                <th scope="row">Lifestyle</th> <td>{{ user.profile.lifestyle }}</td> </tr>  
+                            </tbody>
+                        </table> 
+                        <hr>
+                        <div class="alert alert-dark" role="alert">
+                            Personal goals
+                        </div>
+                            <table class="table bg-white table-borderless">
+                                <tbody>              
+                                    <th scope="row">Task</th> <td>{{ user.profile.task }} </td> </tr>                                 
+                                    <th scope="row">Goal</th> <td>{{ user.profile.goal }} kg</td> </tr> 
+                                    <th scope="row">Diet</th> <td>{{ user.profile.diet }} kcal.</td> </tr> 
+                                </tbody>
+                            </table>                            
+                            <a class="nav-link text-white" href="{% url 'user-logout' %}">Logout</a>
+                        </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}      

@@ -1,0 +1,206 @@
+<div class="col">
+    <div class="card mb-4 rounded-3 dark-sm">
+        <div class="card-header bg-dark py-3">
+          <h4 class="my-0 fw-normal text-white">Daily task</h4>
+        </div>          
+        <p></p>        
+        <div class="card-body">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  
+                  <button type="button" class="w-100 btn btn-lg" data-bs-toggle="modal" data-bs-target="#warm_upModal">
+                    <img src="{{daily.warm_up.muscles}}" class="d-block w-100" alt="...">
+                  </button>
+<!-- Modal -->
+                    <div class="modal fade" id="warm_upModal" tabindex="-1" aria-labelledby="warm_upModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <img src="{{daily.warm_up.img}}" class="d-block-center w-100" alt="...">
+                          </div>
+                          <div class="modal-footer">
+                            <div class="row-cols-md-5">                                
+                              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="btn-group me-1" role="group" aria-label="Second group">
+                                  <button type="button" class="btn btn-outline-secondary">Sets: </button>
+                                  <button type="button" class="btn btn-outline-secondary">1</button>
+                                  <button type="button" class="btn btn-outline-secondary">2</button>
+                                  <button type="button" class="btn btn-outline-secondary">3</button>
+                                  <button type="button" class="btn btn-outline-secondary">4</button>
+                                  <button type="button" class="btn btn-outline-secondary">5</button>
+                                  <button type="button" class="btn btn-outline-secondary">6</button>
+                                  <button type="button" class="btn btn-outline-secondary">7</button>
+                                </div>                                  
+                              </div>          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Warm up</h5>                              
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <button type="button" class="w-100 btn btn-lg" data-bs-toggle="modal" data-bs-target="#w_fullModal">
+                      <img src="{{daily.w_full.muscles}}" class="d-block w-100" alt="...">                            
+                    </button>                              
+<!-- Modal -->
+                      <div class="modal fade" id="w_fullModal" tabindex="-1" aria-labelledby="w_fullModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <img src="{{daily.w_full.img}}" class="d-block-center w-100" alt="...">
+                            </div>
+                            <div class="modal-footer">
+                              <div class="row-cols-md-5">                                  
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">                                                                           
+                                  <div class="btn-group me-1" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-outline-secondary">Sets: </button>
+                                    <button type="button" class="btn btn-outline-secondary">1</button>
+                                    <button type="button" class="btn btn-outline-secondary">2</button>
+                                    <button type="button" class="btn btn-outline-secondary">3</button>
+                                    <button type="button" class="btn btn-outline-secondary">4</button>
+                                    <button type="button" class="btn btn-outline-secondary">5</button>
+                                    <button type="button" class="btn btn-outline-secondary">6</button>
+                                    <button type="button" class="btn btn-outline-secondary">7</button>
+                                  </div>                                  
+                                </div>            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Full body</h5>                              
+                  </div>
+                </div>
+
+
+
+                <div class="carousel-item">
+                  
+                    <button type="button" class="w-100 btn btn-lg" data-bs-toggle="modal" data-bs-target="#w_upModal">
+                      <img src="{{daily.w_up.muscles}}" class="d-block w-100" alt="...">                            
+                    </button>                              
+<!-- Modal -->
+                      <div class="modal fade" id="w_upModal" tabindex="-1" aria-labelledby="w_upModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <img src="{{daily.w_up.img}}" class="d-block-center w-100" alt="...">
+                            </div>
+                            <div class="modal-footer">
+                              <div class="row-cols-md-5">                                  
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">                                                                           
+                                  <div class="btn-group me-1" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-outline-secondary">Sets: </button>
+                                    <button type="button" class="btn btn-outline-secondary">1</button>
+                                    <button type="button" class="btn btn-outline-secondary">2</button>
+                                    <button type="button" class="btn btn-outline-secondary">3</button>
+                                    <button type="button" class="btn btn-outline-secondary">4</button>
+                                    <button type="button" class="btn btn-outline-secondary">5</button>
+                                    <button type="button" class="btn btn-outline-secondary">6</button>
+                                    <button type="button" class="btn btn-outline-secondary">7</button>
+                                  </div>                                  
+                                </div>            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Upper-body</h5>                              
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  
+                  <button type="button" class="w-100 btn btn-lg" data-bs-toggle="modal" data-bs-target="#w_lowModal">
+                    <img src="{{daily.w_low.muscles}}" class="d-block w-100" alt="...">                           
+                  </button>                            
+<!-- Modal -->
+                    <div class="modal fade" id="w_lowModal" tabindex="-1" aria-labelledby="w_lowModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <img src="{{daily.w_low.img}}" class="d-block-center w-100" alt="...">
+                          </div>
+                          <div class="modal-footer">
+                            <div class="row-cols-md-5">                                
+                              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">                                                                        
+                                <div class="btn-group me-1" role="group" aria-label="Second group">
+                                  <button type="button" class="btn btn-outline-secondary">Sets: </button>
+                                  <button type="button" class="btn btn-outline-secondary">1</button>
+                                  <button type="button" class="btn btn-outline-secondary">2</button>
+                                  <button type="button" class="btn btn-outline-secondary">3</button>
+                                  <button type="button" class="btn btn-outline-secondary">4</button>
+                                  <button type="button" class="btn btn-outline-secondary">5</button>
+                                  <button type="button" class="btn btn-outline-secondary">6</button>
+                                  <button type="button" class="btn btn-outline-secondary">7</button>
+                                </div>                                  
+                              </div>          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="carousel-caption d-none d-md-block">                              
+                    <h5>Lower-body</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+             
+                  <button type="button" class="w-100 btn btn-lg" data-bs-toggle="modal" data-bs-target="#w_abs">
+                    <img src="{{daily.w_abs.muscles}}" class="d-block w-100" alt="...">                           
+                  </button>                            
+<!-- Modal -->
+                    <div class="modal fade" id="w_abs" tabindex="-1" aria-labelledby="w_absLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">                        
+                          <div class="modal-body">
+                            <img src="{{daily.w_abs.img}}" class="d-block-center w-100" alt="...">
+                          </div>
+                          <div class="modal-footer">
+                            <div class="row-cols-md-5">                                
+                              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">                                                                         
+                                <div class="btn-group me-1" role="group" aria-label="Second group">
+                                  <button type="button" class="btn btn-outline-secondary">Sets: </button>
+                                  <button type="button" class="btn btn-outline-secondary">1</button>
+                                  <button type="button" class="btn btn-outline-secondary">2</button>
+                                  <button type="button" class="btn btn-outline-secondary">3</button>
+                                  <button type="button" class="btn btn-outline-secondary">4</button>
+                                  <button type="button" class="btn btn-outline-secondary">5</button>
+                                  <button type="button" class="btn btn-outline-secondary">6</button>
+                                  <button type="button" class="btn btn-outline-secondary">7</button>
+                                </div>                                  
+                              </div>          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="carousel-caption d-none d-md-block">                              
+                    <h5>Abs</h5>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>  
+      </div>
+</div>

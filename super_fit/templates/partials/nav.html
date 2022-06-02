@@ -1,0 +1,30 @@
+<!-- START Navbar--> 
+<div class="container ">  
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="fs-3 bg-dark text-white"> QUICK </span><span class="fs-3 ">start</span>
+      </a>    
+
+  {% if user.is_authenticated %}
+      <ul class="nav nav-pills ">
+            <li class="nav-item"><a href="{% url 'home-index' %}" class="nav-link text-dark" aria-current="page">Today</a></li>
+            <li class="nav-item"><a href="{% url 'workout-index' %}" class="nav-link text-dark">Workouts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-dark">Walks</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-dark">Diet</a></li>
+            <li class="nav-item"><a href="{% url 'user-profile'  %}" class="nav-link active bg-dark text-white">Profile</a></li>
+
+  {% else %}
+      <ul class="nav nav-pills ">
+            <li class="nav-item"><a href="{% url 'home-index-demo' %}" class="nav-link text-dark" aria-current="page">Today *<sup>demo</sup></a></li>
+            <li class="nav-item"><a href="{% url 'workout-index' %}" class="nav-link text-dark">Workouts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-dark">Walks</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-dark">Diet</a></li>
+
+            <li class="nav-item"><a href="{% url 'user-register' %}" class="nav-link text-dark">Register</a></li>
+            <li class="nav-item"><a href="{% url 'user-login' %}" class="nav-link active bg-dark text-white">Log in</a></li>
+
+  {% endif %}
+  
+      </ul>
+    </header>
+<!-- END Navbar -->

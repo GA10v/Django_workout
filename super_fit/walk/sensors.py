@@ -6,7 +6,7 @@ from django.dispatch import receiver
 @receiver(post_save, sender=User)
 def create_walk(sender, instance, created, **kwargs):
     if created:
-        Walk.objects.create(staff=instance)
+        Walk.objects.create(staff=instance, )
 
 @receiver(post_save, sender=User)
 def save_walk(sender, instance, **kwargs):

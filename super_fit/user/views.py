@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.forms import UserCreationForm
 from .forms import UpdateUserForm, UpdateProfileForm
-
+from workout.utilits import DailyTaskDemo
 
 
 # Create your views here.
@@ -14,7 +14,7 @@ def register(request):
     else:
         form = UserCreationForm()
     context = {
-        'form' : form
+        'form' : form,
     }
 
     return render(request, template_name='user/login.html', context=context)

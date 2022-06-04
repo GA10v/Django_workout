@@ -16,15 +16,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from user import views as user_view
+from walk import views as walk_view
+from diet import views as diet_view
 from django.contrib.auth import views as auth_view
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('workout.urls')),
-    path('login/', auth_view.LoginView.as_view(template_name='user/login.html') ,name='user-login'),
-    path('register/', user_view.register, name='user-register' ),
+    path('login/', auth_view.LoginView.as_view(template_name='user/login.html'),
+         name='user-login'),
+    path('register/', user_view.register, name='user-register'),
     path('profile/', user_view.profile, name='user-profile'),
     path('profile/update/', user_view.profile_update, name='user-profile-update'),
-    path('logout/', auth_view.LogoutView.as_view(template_name='home/index_demo.html'), name='user-logout'),
+    path('logout/', auth_view.LogoutView.as_view(template_name='home/index_demo.html'),
+         name='user-logout'),
+    path('walks/', walk_view.walks, name='walk-index'),
+    path('diet/', diet_view.diet, name='diet-index'),
 ]

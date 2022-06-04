@@ -1,0 +1,79 @@
+{% extends 'partials/base.html' %}
+
+{% block title %} Quick|start Workouts {% endblock%}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container ">
+    <div class="row row-cols-1 row-cols-md-1 mb-3 ">
+        <div class="row ">
+            <div class="col-4">
+                <div class="card mb-4 rounded-3 dark-sm">
+                    <div class="card-header bg-dark py-3">
+                        <h4 class="my-0 fw-normal text-center text-white">Settings</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <form method="POST">
+                            {% csrf_token %}
+                            <table class="table bg-white table-borderless">
+                                <tbody>
+
+                                    <th scope="row">Focus</th>
+                                    <td>{{ form.focus | as_crispy_field }}</td>
+                                    </tr>
+                                    <th scope="row">Types</th>
+                                    <td>{{ form.types | as_crispy_field }}</td>
+                                    </tr>
+                                    <th scope="row">Difficult</th>
+                                    <td>{{ form.difficult | as_crispy_field}}</td>
+                                    </tr>
+                                    <th scope="row">Equirment</th>
+                                    <td>{{ form.equirment | as_crispy_field}}</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <hr>
+                            <input class="btn btn-succes bg-dark text-white" type="submit" value="GO">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-8">
+                <div class="card mb-2 rounded-3 dark-sm">
+                    <div class="card-header bg-dark py-3">
+                        <h4 class="my-0 fw-normal text-center text-white">Workouts</h4>
+                    </div>
+                    <div class="card-body">
+                        {% for work in page %}
+                        <p>{{ work.name }}</p>
+                        {% endfor %}
+                        <hr>
+                        <nav aria-label="...">
+                            <ul class="pagination pagination-sm">
+                                {% if page.has_previous%}
+                                <li><a href="?page=1">&laquo First</a></li>
+                                <li><a href="?page={{ page.previous_page_number }}">&laquo <<</a></li>
+                                {% endif %}
+
+
+
+
+
+                                <!-- {% for p in page.paginator.page_range %}
+                                <li class="page-item"><a class="page-link" href="?page={{p}}">{{p}}</a></li>
+                                {% endfor %} -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

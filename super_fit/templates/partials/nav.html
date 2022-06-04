@@ -8,17 +8,17 @@
   {% if user.is_authenticated %}
       <ul class="nav nav-pills ">
             <li class="nav-item"><a href="{% url 'home-index' %}" class="nav-link text-dark" aria-current="page">Today</a></li>
-            <li class="nav-item"><a href="{% url 'workout-index' %}" class="nav-link text-dark">Workouts</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Walks</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Diet</a></li>
+            <!-- <li class="nav-item"><a href="{% url 'workout-index' %}" class="nav-link text-dark">Workouts</a></li> -->
+            <li class="nav-item"><a href="{% url 'walk-index' %}" class="nav-link text-dark">Walks</a></li>
+            <li class="nav-item"><a href="{% url 'diet-index'  %}" class="nav-link text-dark">Diet</a></li>
             <li class="nav-item"><a href="{% url 'user-profile'  %}" class="nav-link active bg-dark text-white">Profile</a></li>
 
   {% else %}
       <ul class="nav nav-pills ">
-            <li class="nav-item"><a href="{% url 'home-index-demo' %}" class="nav-link text-dark" aria-current="page">Today *<sup>demo</sup></a></li>
-            <li class="nav-item"><a href="{% url 'workout-index' %}" class="nav-link text-dark">Workouts</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Walks</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Diet</a></li>
+            <li class="nav-item"><a href="{% url 'home-index-demo' %}" class="nav-link text-dark" aria-current="page">Today </a></li>
+            <!-- <li class="nav-item"><a href="{% url 'workout-index' %}" class="nav-link text-dark">Workouts</a></li> -->
+            <li class="nav-item"><a href="{% url 'walk-index' %}" class="nav-link text-dark">Walks</a></li>
+            <li class="nav-item"><a href="{% url 'diet-index'  %}" class="nav-link text-dark">Diet</a></li>
 
             <li class="nav-item"><a href="{% url 'user-register' %}" class="nav-link text-dark">Register</a></li>
             <li class="nav-item"><a href="{% url 'user-login' %}" class="nav-link active bg-dark text-white">Log in</a></li>

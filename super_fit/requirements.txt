@@ -7,3 +7,4 @@ geocoder==1.38.1
 django-crispy-forms==1.14.0
 bs4==0.0.1
 lxml==4.9.0
+django-ipware==4.0.2

@@ -1,0 +1,58 @@
+{% extends 'partials/base.html' %}
+
+{% block title %} Quick|start Walks {% endblock%}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container ">
+    <div class="row row-cols-1 row-cols-md-1 mb-3 ">
+        <div class="row ">
+            <div class="col-4">
+                <div class="card mb-4 rounded-3 dark-sm">
+                    <div class="card-header bg-dark py-3">
+                        <h4 class="my-0 fw-normal text-center text-white">Settings</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <form method="POST">
+                            {% csrf_token %}
+                            <table class="table bg-white table-borderless">
+                                <tbody>
+                                    <th scope="row">Country</th>
+                                    <td>{{ form.country }} </td>
+                                    </tr>
+                                    <th scope="row">City</th>
+                                    <td>{{ form.city }}</td>
+                                    </tr>
+                                    <th scope="row">Street</th>
+                                    <td>{{ form.street }}</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <hr>
+                            <input class="btn btn-succes bg-dark text-white" type="submit" value="GO">
+                        </form>
+                        <hr>
+                        <p>* OSMR demo server services up only "car" routes</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-8">
+                <div class="card mb-2 rounded-3 dark-sm">
+                    <div class="card-header bg-dark py-3">
+                        <h4 class="my-0 fw-normal text-center text-white">Route</h4>
+                    </div>
+                    <div class="card-body">
+                        {{ map | safe}}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

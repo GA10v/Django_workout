@@ -58,7 +58,7 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
+
 db.sqlite3-journal
 
 # Flask stuff:
@@ -261,3 +261,57 @@ super_fit/food.json
 super_fit/create-food.py
 super_fit/create-diet.py
 super_fit/create-my-map.py
+super_fit/test-ip.py
+super_fit/cache/01 Крупы, мука, макароны.json
+super_fit/cache/05 Птица.json
+super_fit/cache/06 Свинина.json
+super_fit/cache/07 Баранина и дичь.json
+super_fit/cache/08 Говядина и телятина.json
+super_fit/cache/09 Молочные продукты.json
+super_fit/cache/10 Рыба и морепродукты.json
+super_fit/cache/10 Яйца и продукты из яиц.json
+super_fit/cache/11 Овощи и зелень.json
+super_fit/cache/11 Фрукты и ягоды.json
+super_fit/cache/12 Орехи и семена.json
+super_fit/cache/13 Травы, специи и соусы.json
+super_fit/cache/14 Хлеб и выпечка.json
+super_fit/cache/15 Бобовые.json
+super_fit/cache/16 Грибы.json
+super_fit/cache/17 Вода и напитки.json
+super_fit/cache/18 Соки.json
+super_fit/cache/19 Каши.json
+super_fit/cache/19 Первые блюда.json
+super_fit/cache/20 Вторые блюда.json
+super_fit/cache/21 Гарниры.json
+super_fit/cache/22 Закуски.json
+super_fit/cache/23 Соусы и заправки.json
+super_fit/cache/24 Напитки.json
+super_fit/cache/25 Десерты.json
+super_fit/cache/26 Выпечка.json
+super_fit/cache/27 Заготовки.json
+super_fit/cache/28 Кондитерские изделия.json
+super_fit/cache/29 Салаты.json
+super_fit/cache/30 Сосиски и колбаса.json
+super_fit/cache/31 Полуфабрикаты.json
+super_fit/cache/32 Детское питание.json
+super_fit/cache/33 Варенье и джемы.json
+super_fit/cache/34 Жиры и масла.json
+super_fit/cache/35 Фаст-фуд.json
+super_fit/cache/36 Ашан.json
+super_fit/cache/37 Бондюэль.json
+super_fit/cache/38 Крошка-Картошка.json
+super_fit/cache/39 Макдоналдс (McDonalds).json
+super_fit/cache/40 Напитки алкогольные.json
+super_fit/cache/41 Пятерочка.json
+super_fit/cache/42 Ресторанная еда.json
+super_fit/cache/43 Роллтон.json
+super_fit/cache/44 Снеки.json
+super_fit/cache/45 Черкизово.json
+super_fit/cache/46 Яшкино.json
+super_fit/cache/47 Campina.json
+super_fit/cache/48 Coca-Cola.json
+super_fit/cache/49 KFC Ростик'c.json
+super_fit/cache/50 Lay's.json
+super_fit/cache/51 Mars.json
+super_fit/cache/52 Nestle.json
+super_fit/cache/53 Subway.json

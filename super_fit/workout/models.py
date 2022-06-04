@@ -7,21 +7,29 @@ import fake_useragent
 class Focus(models.Model):
     '''1: full-body, 2: upper-body, 3: lower-body, 4: abs'''
     name = models.CharField('focus name', max_length=15, null=True)
+    def __str__(self):
+        return self.name.upper()
 
 
 class Types(models.Model):
     '''1: yoga, 2: hiit, 3: stretching, 4: wellness, 5: strength, 6: cardio, 7: combat'''
     name = models.CharField('types name', max_length=15, null=True)
+    def __str__(self):
+        return self.name.upper()
 
 
 class Difficult(models.Model):
     '''1: light, 2: easy, 3: normal, 4: hard, 5: advanced'''
     name = models.CharField('difficult name', max_length=15, null=True)
+    def __str__(self):
+        return self.name.upper()
 
 
 class Equirment(models.Model):
     '''1: none, 2: dumbbells, 3: bar, 4: other'''
     name = models.CharField('equirment name', max_length=15, null=True)
+    def __str__(self):
+        return self.name.upper()
 
 
 class Workout(models.Model):

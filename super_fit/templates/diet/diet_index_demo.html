@@ -1,0 +1,73 @@
+in procress..
+
+
+
+<div class="row row-cols-2 row-cols-lg-2 g-2 g-lg-6">
+    <div class="col-6 col-md-4">
+        <div class="p-3 border bg-light">
+            <div class="row ">
+                <div class="col-4 ">
+
+                    <li class="btn btn-dark d-grid gap-2"><a href="#" class="btn bg-dark text-white">Add Breakfast</a>
+                    </li>
+                    <p></p>
+                    <li class="btn btn-dark d-grid gap-2"><a href="#" class="btn bg-dark text-white">Add Lunch</a></li>
+                    <p></p>
+                    <li class="btn btn-dark d-grid gap-2"><a href="#" class=" btn bg-dark text-white">Add Dinner</a>
+                    </li>
+                    <p></p>
+                    <li class="btn btn-dark d-grid gap-2"><a href="#" class="btn bg-dark text-white">Add Snack</a></li>
+                    <p></p>
+                </div>
+                <div class="col-8">
+                    pie grafic
+
+                    <div class="bg-white">
+                        <canvas id="myChart1" width="100" height="100"></canvas>
+                        <script>
+                            var ctx = document.getElementById('myChart1').getContext('2d');
+                            var myChart1 = new Chart(ctx, {
+                                type: 'pie',
+                                data: {
+                                    labels: ['Fats', 'Proteins', 'Carbos'],
+                                    datasets: [{
+                                        label: 'Meal',
+                                        data: [10, 30, 60],
+                                        backgroundColor: [
+                                            'rgba(240, 240, 240, 1)',
+                                            'rgba(185, 185, 185, 1)',
+                                            'rgba(33, 37, 41, 1)'
+
+                                        ],
+                                        borderColor: [
+                                            'rgba(250, 13, 27, 1)',
+                                            'rgba(185, 185, 185, 1)',
+                                            'rgba(33, 37, 41, 1)'
+                                        ],
+                                        borderWidth: 2
+                                    }]
+                                },
+                                options: {
+                                    scales: {
+                                        yAxes: [{
+                                            ticks: {
+                                                beginAtZero: true
+                                            }
+                                        }]
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-8">
+        <div class="p-3 border bg-light">
+            week's grafic
+        </div>
+
+    </div>
+</div>
